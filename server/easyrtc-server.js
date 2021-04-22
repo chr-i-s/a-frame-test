@@ -2,7 +2,7 @@
 const http = require("http");                 // http server core module
 const path = require("path");
 const express = require("express");           // web framework external module
-const socketIo = require("socket.io");        // web socket external module
+const socketIo = require("socket.io")(http);        // web socket external module
 const easyrtc = require("open-easyrtc");      // EasyRTC external module
 
 // Set process name
